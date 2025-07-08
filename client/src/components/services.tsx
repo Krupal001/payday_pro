@@ -20,7 +20,7 @@ export default function Services() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Our Financial Services
           </h2>
-          <p className="text-xl text-payday-neutral max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             We offer a comprehensive range of financial solutions designed to meet your immediate cash needs.
           </p>
         </div>
@@ -35,14 +35,14 @@ export default function Services() {
           </div>
           <div>
             <h3 className="text-2xl font-bold mb-6">Payday Loans</h3>
-            <p className="text-payday-neutral mb-6">
+            <p className="text-gray-600 mb-6">
               Quick cash advances to help bridge the gap between paychecks. Get up to $1,000 deposited directly into your account within 24 hours.
             </p>
             <ul className="space-y-3">
               {paydayFeatures.map((feature, index) => (
                 <li key={index} className="flex items-center">
-                  <i className="fas fa-check-circle text-payday-primary mr-3"></i>
-                  <span>{feature}</span>
+                  <i className="fas fa-check-circle text-green-500 mr-3"></i>
+                  <span className="text-gray-700">{feature}</span>
                 </li>
               ))}
             </ul>
@@ -52,14 +52,14 @@ export default function Services() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <h3 className="text-2xl font-bold mb-6">Cash Advances</h3>
-            <p className="text-payday-neutral mb-6">
+            <p className="text-gray-600 mb-6">
               Emergency cash when you need it most. Our cash advance service provides immediate financial relief for unexpected expenses.
             </p>
             <ul className="space-y-3">
               {cashAdvanceFeatures.map((feature, index) => (
                 <li key={index} className="flex items-center">
-                  <i className="fas fa-check-circle text-payday-secondary mr-3"></i>
-                  <span>{feature}</span>
+                  <i className="fas fa-check-circle text-blue-500 mr-3"></i>
+                  <span className="text-gray-700">{feature}</span>
                 </li>
               ))}
             </ul>
