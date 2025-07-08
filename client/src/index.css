@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(224, 71.4%, 4.1%);
+  --muted: hsl(220, 14.3%, 95.9%);
+  --muted-foreground: hsl(220, 8.9%, 46.1%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(224, 71.4%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(224, 71.4%, 4.1%);
+  --border: hsl(220, 13%, 91%);
+  --input: hsl(220, 13%, 91%);
+  --primary: hsl(158, 64%, 52%);
+  --primary-foreground: hsl(210, 20%, 98%);
+  --secondary: hsl(220, 14.3%, 95.9%);
+  --secondary-foreground: hsl(220.9, 39.3%, 11%);
+  --accent: hsl(220, 14.3%, 95.9%);
+  --accent-foreground: hsl(220.9, 39.3%, 11%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(224, 71.4%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* Custom PayDay Pro colors */
+  --payday-primary: hsl(158, 64%, 52%);
+  --payday-secondary: hsl(217, 91%, 60%);
+  --payday-accent: hsl(43, 96%, 56%);
+  --payday-neutral: hsl(215, 20%, 65%);
+}
+
+.dark {
+  --background: hsl(224, 71.4%, 4.1%);
+  --foreground: hsl(60, 9.1%, 97.8%);
+  --muted: hsl(223, 47%, 11%);
+  --muted-foreground: hsl(215.4, 16.3%, 56.9%);
+  --popover: hsl(224, 71.4%, 4.1%);
+  --popover-foreground: hsl(60, 9.1%, 97.8%);
+  --card: hsl(224, 71.4%, 4.1%);
+  --card-foreground: hsl(60, 9.1%, 97.8%);
+  --border: hsl(216, 12.2%, 16.5%);
+  --input: hsl(216, 12.2%, 16.5%);
+  --primary: hsl(158, 64%, 52%);
+  --primary-foreground: hsl(210, 20%, 98%);
+  --secondary: hsl(223, 47%, 11%);
+  --secondary-foreground: hsl(60, 9.1%, 97.8%);
+  --accent: hsl(216, 12.2%, 16.5%);
+  --accent-foreground: hsl(60, 9.1%, 97.8%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(216, 12.2%, 16.5%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-payday-primary {
+    color: var(--payday-primary);
+  }
+  
+  .text-payday-secondary {
+    color: var(--payday-secondary);
+  }
+  
+  .text-payday-accent {
+    color: var(--payday-accent);
+  }
+  
+  .text-payday-neutral {
+    color: var(--payday-neutral);
+  }
+  
+  .bg-payday-primary {
+    background-color: var(--payday-primary);
+  }
+  
+  .bg-payday-secondary {
+    background-color: var(--payday-secondary);
+  }
+  
+  .bg-payday-accent {
+    background-color: var(--payday-accent);
+  }
+  
+  .bg-payday-neutral {
+    background-color: var(--payday-neutral);
+  }
+  
+  .border-payday-primary {
+    border-color: var(--payday-primary);
+  }
+  
+  .hover\:bg-payday-primary:hover {
+    background-color: var(--payday-primary);
+  }
+  
+  .hover\:bg-payday-secondary:hover {
+    background-color: var(--payday-secondary);
+  }
+  
+  .hover\:bg-payday-accent:hover {
+    background-color: var(--payday-accent);
+  }
+}
