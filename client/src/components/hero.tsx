@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <section id="home" className="pt-16 bg-gradient-to-br from-payday-primary to-payday-secondary min-h-screen flex items-center">
+    <section id="home" className="pt-16 bg-gradient-to-br from-green-500 to-blue-500 min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-white">
@@ -13,25 +13,25 @@ export default function Hero() {
               Get approved for payday loans in minutes. No lengthy paperwork, no waiting. Just quick, reliable financial solutions tailored to your needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-payday-accent hover:bg-yellow-500 text-white px-8 py-4 rounded-full text-lg font-semibold">
+              <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-4 rounded-full text-lg font-semibold">
                 <i className="fas fa-rocket mr-2"></i>
                 Apply in 2 Minutes
-              </Button>
-              <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-payday-primary px-8 py-4 rounded-full text-lg font-semibold">
+              </button>
+              <button className="border-2 border-white text-white hover:bg-white hover:text-green-500 px-8 py-4 rounded-full text-lg font-semibold">
                 Learn More
-              </Button>
+              </button>
             </div>
             <div className="mt-8 flex flex-wrap gap-6">
               <div className="flex items-center">
-                <i className="fas fa-check-circle text-payday-accent text-xl mr-2"></i>
+                <i className="fas fa-check-circle text-yellow-400 text-xl mr-2"></i>
                 <span>Instant Approval</span>
               </div>
               <div className="flex items-center">
-                <i className="fas fa-shield-alt text-payday-accent text-xl mr-2"></i>
+                <i className="fas fa-shield-alt text-yellow-400 text-xl mr-2"></i>
                 <span>100% Secure</span>
               </div>
               <div className="flex items-center">
-                <i className="fas fa-clock text-payday-accent text-xl mr-2"></i>
+                <i className="fas fa-clock text-yellow-400 text-xl mr-2"></i>
                 <span>24/7 Support</span>
               </div>
             </div>
