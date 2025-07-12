@@ -58,18 +58,6 @@ export default function Contact() {
 
   const contactInfo = [
     {
-      icon: "fas fa-phone",
-      title: "Phone",
-      value: "1-800-PAYDAY-1",
-      bgColor: "bg-payday-primary"
-    },
-    {
-      icon: "fas fa-envelope",
-      title: "Email",
-      value: "support@paydaypro.com",
-      bgColor: "bg-payday-secondary"
-    },
-    {
       icon: "fas fa-clock",
       title: "Hours",
       value: "24/7 Customer Support",

@@ -43,17 +43,14 @@ export default function Navbar() {
               >
                 About
               </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
-                className="text-gray-900 hover:text-payday-primary px-3 py-2 text-sm font-medium transition-colors"
-              >
-                Contact
-              </button>
             </div>
           </div>
           
           <div className="hidden md:block">
-            <Button className="bg-payday-primary hover:bg-green-600 text-white px-6 py-2 rounded-full text-sm font-medium">
+            <Button 
+              onClick={() => scrollToSection('contact')}
+              className="bg-payday-primary hover:bg-green-600 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors"
+            >
               Apply Now
             </Button>
           </div>
@@ -92,9 +89,9 @@ export default function Navbar() {
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="block px-3 py-2 text-base font-medium text-gray-900 hover:text-payday-primary"
+              className="block px-3 py-2 text-base font-medium text-white bg-payday-primary hover:bg-green-600 rounded-md"
             >
-              Contact
+              Apply Now
             </button>
           </div>
         </div>

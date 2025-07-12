@@ -16,16 +16,9 @@ export default function Footer() {
   const legal = [
     "Privacy Policy",
     "Terms of Service",
-    "Responsible Lending",
-    "Regulations"
-  ];
+     ];
 
-  const socialLinks = [
-    { icon: "fab fa-facebook-f", href: "#" },
-    { icon: "fab fa-twitter", href: "#" },
-    { icon: "fab fa-instagram", href: "#" },
-    { icon: "fab fa-linkedin-in", href: "#" }
-  ];
+
 
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -39,17 +32,7 @@ export default function Footer() {
             <p className="text-gray-400 mb-4">
               Your trusted partner for fast, reliable payday loans and cash advances.
             </p>
-            <div className="flex space-x-4">
-              {socialLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.href}
-                  className="text-gray-400 hover:text-payday-primary transition-colors"
-                >
-                  <i className={link.icon}></i>
-                </a>
-              ))}
-            </div>
+            
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
@@ -90,7 +73,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 PayDay Pro. All rights reserved. | Licensed Lender | NMLS ID: 123456
+            © 2025 PayDay Pro. All rights reserved. 
           </p>
         </div>
       </div>
